@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>SAMPLE WEB</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>DEVZONE</h1>
+
+        <div class="search">
+            <input type="search" name="search" id="text" placeholder="search">
+        </div>
+
+    </header>
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+    </nav>
+
+    <main class="products">
+        <h2>Latest Gadgets</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Assets/ip 16.jpg" alt="Smartphone">
+                <img src="Assets/ip 17.jpg" alt="Smartphone">
+                <img src="Assets/s25.jpg" alt="Smartphone">
+                <h3>iPhone 15 Pro</h3>
+                <p>$999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Assets/ip 16.jpg" alt="Smartphone">
+                    <h3>iPhone 15 Pro</h3>
+                    <p>$999</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="Assets/ip 16.jpg" alt="Smartphone">
+                        <h3>iPhone 15 Pro</h3>
+                        <p>$999</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="Assets/ip 16.jpg" alt="Smartphone">
+                            <h3>iPhone 15 Pro</h3>
+                            <p>$999</p>
+                            <button>Add to Cart</button>
+                        </div>
+
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <img src="Assets/ip 16.jpg" alt="Smartphone">
+                                <h3>iPhone 15 Pro</h3>
+                                <p>$999</p>
+                                <button>Add to Cart</button>
+                            </div>
+
+                        </div>
+    </main>
+    <!-- Floating Chat Button -->
+    <div class="chat-button" id="chatButton">
+        💬
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            Chat with us
+            <span class="close-chat" id="closeChat">✖</span>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <p>Hi! How can we help you today?</p>
+        </div>
+        <input type="text" id="chatInput" placeholder="Type a message..." />
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Devzone GadgetStore</h3>
+                <p>Your one-stop shop for the latest gadgets, accessories, and tech deals.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="https://s.magecdn.com/social/tc-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="https://s.magecdn.com/social/tc-twitter.svg" alt="twitter"></a>
+                    <a href="#"><img src="https://s.magecdn.com/social/tc-instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="https://s.magecdn.com/social/tc-linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Devzone GadgetStore. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('asideToggle');
+        const aside = document.getElementById('gadgetAside');
+
+        toggleBtn.addEventListener('click', () => {
+            aside.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
